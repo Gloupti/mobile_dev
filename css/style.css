@@ -7,3 +7,43 @@ p
 {
     color: #7F7F7F;
 }
+
+
+
+
+/* --------------- prevent all the focus design --------------- */
+a {
+     text-align: inherit !important;
+     border :none !important;
+ }
+ 
+ a:hover, a:focus, a:active, a:visited, .ui-page-theme-a .ui-btn.ui-btn-active {
+     background-color: #f6f6f6 !important;
+     border :none !important;
+
+ }
+ 
+ *:focus {
+     outline: none !important;
+     box-shadow: none !important;
+     border-color: transparent!important;
+ }
+ 
+ textarea:focus, input:focus {
+ outline: none !important;
+ }
+ 
+ .ui-page-theme-a .ui-focus{
+      box-shadow: none !important;
+ }
+
+
+/* --------------- panel design --------------- */
+
+ .ui-page-theme-a .ui-body-inherit, .ui-page-theme-a .ui-btn.ui-btn-active {
+     background-color: #f6f6f6 !important;
+ }
+ 
+ .ui-panel {
+     width: 11em !important;
+ }

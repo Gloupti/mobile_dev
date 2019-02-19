@@ -3,48 +3,20 @@
     <head>
         <title>Page Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
 	<script src="js/jquery-1.11.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script src="script.js"></script>
-        <style>
-            a {
-                text-align: inherit !important;
-                border :none !important;
-                
-            }
-            
-            a:hover, a:focus, a:active, a:visited, .ui-page-theme-a .ui-btn.ui-btn-active {
-                background-color: #f6f6f6 !important;
-                border :none !important;
-
-            }
-            *:focus {
-                outline: none !important;
-                box-shadow: none !important;
-                border-color: transparent!important;
-            }
-            textarea:focus, input:focus {
-            outline: none !important;
-            }
-            .ui-page-theme-a .ui-focus{
-                 box-shadow: none !important;
-            }
-            .ui-page-theme-a .ui-body-inherit, .ui-page-theme-a .ui-btn.ui-btn-active {
-                background-color: #f6f6f6 !important;
-            }
-            .ui-panel {
-                width: 11em !important;
-            }
-            
-
-            
-        </style>
+	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  
         
     </head>
     
     <body>
         <div data-role="page">
+          
+            
+            <!----------------------------- MENU TOP LEFT ------------------------------>
             
         <div data-role="panel" id="topright-menu" data-display="overlay" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-inherit ui-panel-animate ui-panel-open">
 
@@ -57,20 +29,44 @@
                 <li><a href="parameters.html" class="ui-btn">Parameters</a></li>
                 <li><a href="#" class="ui-btn">Log off</a></li>
             </ul>
-            </div>
+        </div>
         </div>
             
+            <!----------------------------- END MENU TOP LEFT ------------------------------>
+
+            
+            <!----------------------------- NAVBAR 1 ------------------------------>
+
             <div data-role="header">
                 <div data-role="navbar">
                     <ul>
                         <li><a href="main_page.html" ><img src="pictures/color_logo.png" width="100%" /></a></li>
                         <li><a href="#topright-menu" style="text-align: right !important;"><img src="pictures/color_menu.png" width="20%" style="margin: 8.5% 10% 6.5%" /></a></li>
                     </ul>
-                </div><!-- /navbar -->
-            </div><!-- /header -->
+                </div>
+            </div>
+            
+            <!----------------------------- END NAVBAR 1 ------------------------------>
+            
+            
+            
+            <!----------------------------- NAVBAR 2 ------------------------------
+
+            <div data-role="header">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="dog_profile.html" ><img src="" width="100%" />Picture of the dog uploaded by the user</a></li>
+                        <li><a href="#topright-menu" style="text-align: right !important;"><img src="pictures/color_menu.png" width="20%" style="margin: 8.5% 10% 6.5%" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            ----------------------------- END NAVBAR 2 ------------------------------>
+
+            
             
             <div role="main" class="ui-content">
-        
+            
             </div><!-- /content -->
             
             <div data-role="footer">
