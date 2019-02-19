@@ -4,7 +4,7 @@
         <title>Page Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script src="script.js"></script>
         <style>
@@ -30,12 +30,13 @@
             .ui-page-theme-a .ui-focus{
                  box-shadow: none !important;
             }
-            .ui-page-theme-a .ui-body-inherit {
-                background-color: #f6f6f6;
+            .ui-page-theme-a .ui-body-inherit, .ui-page-theme-a .ui-btn.ui-btn-active {
+                background-color: #f6f6f6 !important;
             }
             .ui-panel {
                 width: 11em !important;
             }
+            
 
             
         </style>
@@ -45,23 +46,25 @@
     <body>
         <div data-role="page">
             
-          <div data-role="panel" id="right-panell" data-display="overlay" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-inherit ui-panel-animate ui-panel-open">
+        <div data-role="panel" id="topright-menu" data-display="overlay" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-inherit ui-panel-animate ui-panel-open">
 
-        <div class="ui-panel-inner"><ul data-role="listview" data-icon="false" class="ui-listview">
-        	<li data-icon="delete" class="ui-first-child" ><a href="#" data-rel="close" style=" padding-top: 10%" class="ui-btn ui-btn-icon-right ui-icon-delete"></a></li>
-            <li><a href="#" class="ui-btn">User Account</a></li>
-            <li><a href="#" class="ui-btn">Parameters</a></li>
-            <li><a href="#" class="ui-btn">Application Guide</a></li>
-            <li><a href="#" class="ui-btn">About us</a></li>
-            <li><a href="#" class="ui-btn">Log off</a></li>
-        </ul></div>
+        <div class="ui-panel-inner">
+            <ul data-role="listview" data-icon="false" class="ui-listview">
+        	    <li data-icon="delete"><a href="#" data-rel="close" style=" padding-top: 20%" class="ui-btn ui-btn-icon-right ui-icon-delete"></a></li>
+                <li><a href="user_account.html" class="ui-btn">User Account</a></li>
+                <li><a href="about_us.html" class="ui-btn">About us</a></li>
+                <li><a href="help_guide.html" class="ui-btn">Help Guide</a></li>
+                <li><a href="parameters.html" class="ui-btn">Parameters</a></li>
+                <li><a href="#" class="ui-btn">Log off</a></li>
+            </ul>
             </div>
+        </div>
             
             <div data-role="header">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="test.html" ><img src="color_logo.png" width="100%" /></a></li>
-                        <li><a href="#right-panell" style="text-align: right !important;"><img src="menuhamburger.png" width="25%" style="margin-bottom: 4%; margin-top: 9%;  margin-right: 10%" /></a></li>
+                        <li><a href="main_page.html" ><img src="pictures/color_logo.png" width="100%" /></a></li>
+                        <li><a href="#topright-menu" style="text-align: right !important;"><img src="pictures/color_menu.png" width="20%" style="margin: 8.5% 10% 6.5%" /></a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /header -->
