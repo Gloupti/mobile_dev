@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <!-- Content security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; media-src *">
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- Color theme for statusbar -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+	<title>Login</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
+    
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
-    <div id="part1">
+<!-- <div id="part1">
         <div id="container1">
             <div id="structure1">
                 <div class="content1">
@@ -41,7 +39,34 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>-->
+    <div data-role="page">
+        
+        <!--<div data-role="header" style="background-color:white">
+            
+        </div> /header -->
+        
+        <div role="main" class="ui-content">
+            <p style="text-align: center"><img src="pictures/favicon.png" alt="favicon" style="height:100px; width:auto;"></p>
+            <form>
+                <div class="ui-field-contain">
+                    <input type="text" name="userName" placeholder="user name">
+                    <input type="password" name="password" placeholder="password">
+                </div>    
+                <button type="submit" style="background-color: #81bc4a; color: white;">Login</button>
+            </form>
+            
+        </div><!-- /content -->
+        
+        <div data-role="footer" style="background-color: white;">
+            <div id="liens" style="text-align: center; padding: 5%;">
+                <a href="registration.html"style=" padding-right: 5%;">New User?</a>
+                <a href="">Password Forgotten?</a>
+            </div>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
 </body>
 </html>
+   
+    

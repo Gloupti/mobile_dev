@@ -3,7 +3,11 @@
 *{
     margin:0;
 }
-#part1{
+img{
+    
+    margin:auto;
+}
+/*#part1{
     position: relative;
     top: 200px;
 }
@@ -71,4 +75,4 @@ form{
 #liens a {
     color:#7f7f7f;
     margin :5px;
-}
+}*/
