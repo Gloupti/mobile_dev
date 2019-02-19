@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- Color theme for statusbar -->
-    <meta name="theme-color" content="#2196f3">
-    <!-- Your app title -->
-    <title>My App</title>
-    <!-- Path to Framework7 Library Bundle CSS -->
-    <link rel="stylesheet" href="framework7/packages/core/css/framework7.bundle.min.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/startcss.css">
-  </head>
-  <body>
-    <!-- App root element -->
-    <div id="app">
-      <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
+<head>
+	<title>Page Title</title>
 
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-          <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Your Dog</div>
-            </div>
-          </div>
+	<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
 
-          <!-- Bottom Toolbar -->
-          <div class="toolbar toolbar-bottom">
-            <div class="toolbar-inner">
-              <!-- Toolbar links -->
-              <a href="#" class="link">Link 1</a>
-              <a href="#" class="link">Link 2</a>
-            </div>
-          </div>
+<div data-role="page">
 
-          <!-- Scrollable page content -->
-          <div class="page-content">
-            <p>Page content goes here</p>
-            <!-- Link to another page -->
-            <a href="/about/">About app</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Path to Framework7 Library Bundle JS-->
-    <script type="text/javascript" src="framework7/packages/core/js/framework7.bundle.min.js"></script>
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+	<div data-role="header">
+		<h1>Page Title</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="text-align: center; font-family: 'Maven Pro', sans-serif;">
+        
+        <a href="./health.html"><img src="pictures/health_icon.png" alt="health" style="height:150px; margin-top: 20px;"/>
+        <p>Health</p></a>
+        
+        <a href="./activity.html"><img src="pictures/activities_icon.png" alt="activity" style="height:150px; margin-top: 10px;"/>
+        <p>Activity</p></a>
+        
+        <a href="./feeding.html"><img src="pictures/feeding_icon.png" alt="feeding" style="height:150px; margin-top: 20px;"/>
+        <p>Feeding</p></a>
+        
+        <a href="./raising.html"><img src="pictures/raise_icon.png" alt="raising" style="height:150px; margin-top: 20px;"/>
+        <p>Raising</p></a>
+        
+        
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
 </html>
