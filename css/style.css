@@ -10,6 +10,22 @@ p
 
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
 
 /* --------------- prevent all the focus design --------------- */
 a {
@@ -36,6 +52,61 @@ a {
  .ui-page-theme-a .ui-focus{
       box-shadow: none !important;
  }
+
+
+/* --------------- navbar --------------- */
+
+.navbar ul, .navbar li {
+    display: flex;
+    max-height: 15vh
+}
+
+.navbar a {
+    width: 100%;
+}
+
+#logo img {
+     width: 100%;
+}
+
+#hamburger {
+    text-align: right !important;
+}
+
+#hamburger img {
+    margin: 8.5% 10% 6.5%;
+    width: 20%;
+}
+
+#dog-pp img {
+    /* TO CHANGE !!!!!!!!!!! IMAGE MUST BE CROP AS A SQUARE OR A ROUND AND RESIZED WHEN UPLOADED !!!!!!!!! */
+    object-fit: cover;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #logo img {
+     width: 50%;
+    }
+    
+    #hamburger img {
+    margin: 4.5% 5% 3.5%;
+    width: 10%;
+    }
+    
+    #dog-pp img {
+        /* TO CHANGE !!!!!!!!!!! IMAGE MUST BE CROP AS A SQUARE OR A ROUND AND RESIZED WHEN UPLOADED !!!!!!!!! */
+        object-fit: cover;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px
+}
+} 
+
+
 
 
 /* --------------- panel (top right menu) design --------------- */
