@@ -191,5 +191,31 @@ a {
     width: 120px;
     height: 120px
 }
+
+
+/* --------------- health-page.html --------------- */
+
+.health-button {
+    text-align: center;
+}
+
+.health-button div {
+    width: 50%;
+    float: left;
+}
+
+.health-button h2 {
+    margin-block-start: 1;
+    margin-block-end: 0;
+    color: #7f7f7f;
+}
+
+.health-button img {
+    /* TO CHANGE !!!!!!!!!!! IMAGE MUST BE CROP AS A SQUARE OR A ROUND AND RESIZED WHEN UPLOADED !!!!!!!!! */
+    object-fit: cover;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px
+}
     
     
