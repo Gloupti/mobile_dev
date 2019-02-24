@@ -1,12 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
-<head>
-<style>
-</style>
-</head>
-<body>
-
+    <head>
+        <title>Dog Profile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
   
+        
+    </head>
+    
+    <body>
+        <div data-role="page">
+          
+            
+            <!----------------------------- MENU TOP RIGHT ------------------------------>
+            
+            <div data-role="panel" id="topright-menu" data-display="overlay" data-position="right" data-position-fixed="true" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-inherit ui-panel-animate ui-panel-open">
+                
+                <div class="ui-panel-inner">
+                    <ul data-role="listview" data-icon="false" class="ui-listview">
+                        <li data-icon="delete"><a href="#" data-rel="close" style=" padding-top: 20%" class="ui-btn ui-btn-icon-right ui-icon-delete"></a></li>
+                        <li><a href="user_account.html" class="ui-btn">Account</a></li>
+                        <li><a href="about_us.html" class="ui-btn">About us</a></li>
+                        <li><a href="help_guide.html" class="ui-btn">Help Guide</a></li>
+                        <li><a href="parameters.html" class="ui-btn">Parameters</a></li>
+                        <li><a href="#" class="ui-btn">Log off</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!----------------------------- END MENU TOP RIGHT ------------------------------>
+            
+            
+            
+         <!----------------------------- NAVBAR 2 ------------------------------>
 
-</body>
+            <div data-role="header" data-position="fixed">
+                <div data-role="navbar" class="navbar navbar-1" data-position="fixed">
+                    <ul>
+                        <li><a id="logo" href="main_page.html"><img src="pictures/color_logo.png"/></a></li>
+                        <li><a id="hamburger" href="#topright-menu"><img src="pictures/color_menu.png"/></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!----------------------------- END NAVBAR 2 ------------------------------>
+
+            
+            
+            <div role="main" class="ui-content">
+                <h1>Dog profile</h1>
+                
+                <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.
+                    
+                Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    
+                Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri. </p>
+                
+            </div><!-- /content -->
+            
+            
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="main_page.html" data-icon="arrow-l" data-rel="back"></a></li>
+                        <li><a href="main_page.html" data-icon="home"></a></li>
+                        <li><a href="help_guide.html" data-icon="info"></a></li>
+                    </ul>
+                </div>
+            </div><!-- /footer -->
+            
+            
+            
+            
+        </div>
+    </body>
 </html>
