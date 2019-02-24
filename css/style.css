@@ -69,14 +69,6 @@ a {
      width: 100%;
 }
 
-#hamburger {
-    text-align: right !important;
-}
-
-#hamburger img {
-    margin: 8.5% 10% 6.5%;
-    width: 20%;
-}
 
 #dog-pp img {
     /* TO CHANGE !!!!!!!!!!! IMAGE MUST BE CROP AS A SQUARE OR A ROUND AND RESIZED WHEN UPLOADED !!!!!!!!! */
@@ -86,16 +78,36 @@ a {
     height: 65px
 }
 
+
+#hamburger {
+    text-align: right !important;
+}
+
+.navbar-1 #hamburger img {
+    margin: 8.5% 10% 6.5%;
+    width: 20%;
+}
+
+.navbar-2 #hamburger img {
+    margin: 12.5% 10% 6.5%;
+    width: 40%;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #logo img {
      width: 50%;
     }
     
-    #hamburger img {
+    .navbar-1 #hamburger img {
     margin: 4.5% 5% 3.5%;
     width: 10%;
     }
+    
+    .navbar-2 #hamburger img {
+    margin: 6.5% 5% 3.5%;
+    width: 20%;
+}
     
     #dog-pp img {
         /* TO CHANGE !!!!!!!!!!! IMAGE MUST BE CROP AS A SQUARE OR A ROUND AND RESIZED WHEN UPLOADED !!!!!!!!! */
@@ -103,11 +115,24 @@ a {
     border-radius: 100%;
     width: 100px;
     height: 100px
-}
+    }
 } 
 
+.page-title {
+    text-align: center !important;
+    padding: 2px !important;
+    font-family: 'Maven pro', sans-serif;
+    font-size: 1.6em !important;
+    white-space: normal;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 
-
+.page-title-link {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
 
 /* --------------- panel (top right menu) design --------------- */
 
