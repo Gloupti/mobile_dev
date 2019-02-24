@@ -54,7 +54,70 @@
             <div role="main" class="ui-content">
                 <h1>Forms add new dog</h1>
                 
-                
+                <form action="/action_page.php" class="ui-filterable">
+                    First name:<br>
+                    <input type="text" name="firstname" value="">
+                    <br>
+                    
+                    Last name:<br>
+                    <input type="text" name="lastname" value="">
+                    <br>
+                    
+                    Profile picture:<br>
+                    <input type="file" name="pp" accept="image/*" value="">
+                    <br>
+
+                    Date of birth:<br>
+                    <input type="date" name="date" id="date" value="">
+                    <br>
+                    
+                     <fieldset data-role="controlgroup">
+                        <legend>Sex:</legend>
+                        <input type="radio" name="sex" id="male" value="choice-1">
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" id="female" value="choice-2">
+                        <label for="female">Female</label>
+                     </fieldset>
+                     <br>
+                    
+                    <fieldset data-role="controlgroup">
+                        <legend>Weight:</legend>
+                        <input type="radio" name="weight" id="XS" value="XS">
+                        <label for="XS">1 - 10 lbs → X-Small dog</label>
+                        <input type="radio" name="weight" id="S" value="S">
+                        <label for="S">11 -  25 lbs  → Small dog</label>
+                        <input type="radio" name="weight" id="M" value="M">
+                        <label for="M">26 - 40 lbs  → Medium dog</label>
+                        <input type="radio" name="weight" id="L" value="L">
+                        <label for="L">41 - 70 lbs  → Large dog</label>
+                        <input type="radio" name="weight" id="XL" value="XL">
+                        <label for="XL">71 - 90 lbs → X-Large dog</label>
+                        <input type="radio" name="weight" id="XXL" value="XXL">
+                        <label for="XXL">91 -110 lbs → XX-Large dog</label>
+                    </fieldset><br>
+                    
+                    Breed (add several breeds if the dog is mix-breeded, and add no one if you don't know it):<br>
+                    <input id="filterBasic-input" data-type="search">
+                    <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#filterBasic-input">
+                        <li><input type="checkbox" name="breed" id="labrador" value="labrador">
+                        <label for="labrador">Labrador</label></li>
+                        <li><input type="checkbox" name="breed" id="pitt-bull" value="pitt-bull">
+                        <label for="pitt-bull">Pitbull</label></li>
+                        <li><input type="checkbox" name="breed" id="teckel" value="teckel">
+                        <label for="teckel">Teckel</label></li>
+                        <li><input type="checkbox" name="breed" id="malinois" value="malinois">
+                        <label for="malinois">Malinois</label></li>
+                    </ul><br>
+                    
+                    Particularities:<br>
+                    <textarea cols="40" rows="20" name="textarea" id="textarea"></textarea><br>
+                    
+                    
+                    
+                    <br><br>
+                    <input type="submit" value="Add">
+                    <input type="reset" value="Cancel">
+                </form>       
                 
             </div><!-- /content -->
             
