@@ -143,3 +143,26 @@ a {
  .ui-panel {
      width: 11em !important;
  }
+
+
+/* --------------- dog_page.html --------------- */
+
+.dog-page {
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    margin: auto;
+}
+
+.dog-page div {
+    width: 50%;
+    float: left;
+    margin-top: 5vh;
+}
+
+.dog-page img {
+    height: 15vh;
+}
+
+
+    
+    
