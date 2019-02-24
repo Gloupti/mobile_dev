@@ -218,4 +218,16 @@ a {
     height: 50px
 }
     
+
+/* --------------- vet-around.html --------------- */
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+}
+
+.gmap_canvas iframe {
+    height: 65vh;
+    width: 100vw;
+}
+  
     
