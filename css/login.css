@@ -7,72 +7,13 @@ img{
     
     margin:auto;
 }
-/*#part1{
-    position: relative;
-    top: 200px;
-}
-#container1{
-    margin:auto;
-    
-}
 
-#structure1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-#logo{
-    height:150%;
-    width: auto;
+p{
     text-align: center;
 }
-
-#part2{
-    position: relative;
-    top: 200px;
+img{
+    height:100px; width:auto;
 }
-#container2{
-    margin:auto;
-    width:80%px;
-    padding: 10%;
+#btnLog{
+    background-color: #81bc4a; color: white;
 }
-form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-
-
-.content2 form input{
-    border : 1px solid #7f7f7f;
-    border-radius: 12px;
-    padding : 5px;
-    margin :10px;
-    width :60%;
-    font-size: 20px;
-    font-family: 'Maven Pro', sans-serif;
-}
-.content2 form button{
-    border-radius: 12px;
-    padding : 5px;
-    border : 1px solid #81BC4A;
-    background-color: #81BC4A;
-    color : white;
-    margin :10px;
-    width :50%;
-    font-size: 20px;
-    font-family: 'Maven Pro', sans-serif;
-}
-
-#liens{
-    text-align: center;
-    padding-top: 5%;
-    font-family: 'Maven Pro', sans-serif;
-    
-}
-#liens a {
-    color:#7f7f7f;
-    margin :5px;
-}*/

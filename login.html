@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
     
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
@@ -47,19 +48,19 @@
         </div> /header -->
         
         <div role="main" class="ui-content">
-            <p style="text-align: center"><img src="pictures/favicon.png" alt="favicon" style="height:100px; width:auto;"></p>
+            <p ><img src="pictures/favicon.png" alt="favicon" ></p>
             <form>
                 <div class="ui-field-contain">
                     <input type="text" name="userName" placeholder="user name">
                     <input type="password" name="password" placeholder="password">
                 </div>    
-                <button type="submit" style="background-color: #81bc4a; color: white;">Login</button>
+                <button id="btnLog" type="submit" >Login</button>
             </form>
             
         </div><!-- /content -->
         
         <div data-role="footer" style="background-color: white;">
-            <div id="liens" style="text-align: center; padding: 5%;">
+            <div class="liens" style="text-align: center; padding: 5%;">
                 <a href="registration.html"style=" padding-right: 5%;">New User?</a>
                 <a href="">Password Forgotten?</a>
             </div>
