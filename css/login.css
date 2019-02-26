@@ -3,6 +3,9 @@
 *{
     margin:0;
 }
+div{
+    font-family: 'Maven Pro', sans-serif;
+}
 img{
     
     margin:auto;
