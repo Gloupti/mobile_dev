@@ -34,7 +34,7 @@
             
             
             
-         <!----------------------------- NAVBAR 2 ------------------------------>
+          <!----------------------------- NAVBAR 1 ------------------------------>
 
             <div data-role="header" data-position="fixed">
                 <div data-role="navbar" class="navbar navbar-1" data-position="fixed">
@@ -45,16 +45,14 @@
                 </div>
             </div>
             
-            <!----------------------------- END NAVBAR 2 ------------------------------>
+            <!----------------------------- END NAVBAR 1 ------------------------------>
 
-            <!-- get all data from databases -->
+            <!--get data from database and fill in textboxes --> 
             
             <div role="main" class="ui-content">
-                <h1>Dog profile</h1>
+                <h1>Modify Dog Profil</h1>
                 
-                 <form action="/action_page.php" class="ui-filterable">
-                    Profile picture:<br><br>
-                     
+                <form action="/action_page.php" class="ui-filterable">
                     First name:<br>
                     <input type="text" name="firstname" value="">
                     <br>
@@ -63,6 +61,10 @@
                     <input type="text" name="lastname" value="">
                     <br>
                     
+                    Profile picture:<br>
+                    <input type="file" name="pp" accept="image/*" value="">
+                    <br>
+
                     Date of birth:<br>
                     <input type="date" name="date" id="date" value="">
                     <br>
@@ -111,9 +113,9 @@
                     
                     
                     <br><br>
-                    <input type="submit" value="Modify" href="./modify_dog.html">
-                    <input type="reset" value="See Menu" href="./dog_page.html">
-                </form>   
+                    <input type="submit" value="Confirm Changes" href="./dog_profile.html">
+                    <input type="reset" value="Cancel" href="./dog_profile.html">
+                </form>       
                 
             </div><!-- /content -->
             
