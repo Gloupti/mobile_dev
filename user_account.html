@@ -4,6 +4,7 @@
         <title>Account</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/user_account.css" />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/script.js"></script>
@@ -61,13 +62,26 @@
             
             
             <div role="main" class="ui-content">
-                <h1>Account</h1>
-                
-                <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.
-                    
-                Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
-                    
-                Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri. </p>
+                <h1>Your Account</h1>
+                <p style="color:red"> your input is incomplete</p>
+               <form action="">
+                <label for="userAccName">Name</label>
+                <input disabled='disabled' type="text" name="name" id="userAccName" value="my name">
+                <label for="userAccEmail">Email</label>
+                <input disabled='disabled' type="text" name="email" id="userAccEmail" value="my@email.com">
+                <label for="userAccPassword">Password:</label>
+                <input disabled='disabled'type="password" name="password" id="userAccPassword" value="mypassword" autocomplete="off">
+                <div id="confirmation">
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" name="password" id="confirmPassword" value="" autocomplete="off">
+                </div>
+               </form>
+                <div id="modifyInfos">
+                    <button id="btnEdit" class="ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-edit">Edit</button>
+                    <button id='validateEdit' class="ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-check">check</button>
+                </div>
+
+            <p> number of dogs : 1</p>
                 
             </div><!-- /content -->
             
@@ -87,5 +101,71 @@
             
             
         </div>
+        <script >
+
+        
+            /*var edit = document.getElementById('btnEdit');
+
+            
+            var UserName = document.getElementById('userAccName');
+            UserName.disabled = true;
+          
+            var UserEmail = document.getElementById('userAccEmail');
+            UserEmail.disabled = true;
+
+            var UserPassword = document.getElementById('userAccPassword');
+            UserPassword.disabled = true;
+
+            
+
+            edit.addEventListener('click', editProfile);
+        
+            function editProfile(){
+                
+                UserName.disabled = false;
+                UserEmail.disabled = false;
+                
+            }*/
+
+            var incomplete = $('p');
+            incomplete.hide();
+            var confirm = $('#confirmation');
+            confirm.hide();
+            var check = $('#validateEdit');
+            check.hide();
+            check.css({"background-color":"#81bc4a","color":"white"}) ;
+
+            var username = $('#userAccName');
+            var usermail = $('#userAccEmail');
+            var userpwd = $('#userAccPassword');
+
+            $('#btnEdit').click(editProfile);
+            
+            function editProfile(){
+                username.textinput('enable');
+                usermail.textinput('enable');
+                userpwd.textinput('enable');
+                check.show();
+                confirm.show();
+                
+               
+            }
+            check.click(check);
+
+            function check(){
+                /*if (username.val()=" "){
+                    username.css({"border-color":"red"});
+                }
+                if(usermail.val()=" "){
+                    usermail.css("border-color","red");
+                }
+                if (userpwd.val()=" "){
+                    usermail.css("border-color","red");
+                }*/
+                alert('hi');
+            }
+            
+            </script>
     </body>
+   
 </html>
