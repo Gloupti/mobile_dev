@@ -64,18 +64,18 @@
             
             <div role="main" class="ui-content">
                 <h1>Your Account</h1>
-               <div id="notComplete"><p style="color:red"> your input is incomplete</p></div>
+               <div id="notComplete"><p style="color:red"><!-- dynamically modified value with js--></p></div>
                 
                <form action="">
                 <label for="userAccName">Name</label>
-                <input disabled='disabled' type="text" name="name" id="userAccName" value="my name">
+                <input class='inputAcc' disabled='disabled' type="text" name="name" id="userAccName" value="my name">
                 <label for="userAccEmail">Email</label>
-                <input disabled='disabled' type="text" name="email" id="userAccEmail" value="my@email.com">
+                <input  class='inputAcc' disabled='disabled' type="text" name="email" id="userAccEmail" value="my@email.com">
                 <label for="userAccPassword">Password:</label>
-                <input disabled='disabled' type="password" name="password" id="userAccPassword" value="mypassword" autocomplete="off">
+                <input  class='inputAcc' disabled='disabled' type="password" name="password" id="userAccPassword" value="mypassword" autocomplete="off">
                 <div id="confirmation">
                 <label for="confirmPassword">Confirm password:</label>
-                <input  type="password" name="password" id="confirmPassword" value="" autocomplete="off">
+                <input   class='inputAcc' type="password" name="password" id="confirmPassword" value="" autocomplete="off">
                 </div>
                </form>
                 <div id="modifyInfos">
@@ -103,34 +103,7 @@
             
             
         </div>
-        <script >
-
-        
-            /*var edit = document.getElementById('btnEdit');
-
-            
-            var UserName = document.getElementById('userAccName');
-            UserName.disabled = true;
-          
-            var UserEmail = document.getElementById('userAccEmail');
-            UserEmail.disabled = true;
-
-            var UserPassword = document.getElementById('userAccPassword');
-            UserPassword.disabled = true;
-
-            
-
-            edit.addEventListener('click', editProfile);
-        
-            function editProfile(){
-                
-                UserName.disabled = false;
-                UserEmail.disabled = false;
-                
-            }*/
-           
-           
-          
+        <script src="js/script.js">
             
         </script>
     </body>
