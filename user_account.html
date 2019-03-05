@@ -63,22 +63,23 @@
             
             <div role="main" class="ui-content">
                 <h1>Your Account</h1>
-                <p style="color:red"> your input is incomplete</p>
+               <div id="notComplete"><p style="color:red"> your input is incomplete</p></div>
+                
                <form action="">
                 <label for="userAccName">Name</label>
                 <input disabled='disabled' type="text" name="name" id="userAccName" value="my name">
                 <label for="userAccEmail">Email</label>
                 <input disabled='disabled' type="text" name="email" id="userAccEmail" value="my@email.com">
                 <label for="userAccPassword">Password:</label>
-                <input disabled='disabled'type="password" name="password" id="userAccPassword" value="mypassword" autocomplete="off">
+                <input disabled='disabled' type="password" name="password" id="userAccPassword" value="mypassword" autocomplete="off">
                 <div id="confirmation">
                 <label for="confirmPassword">Confirm password:</label>
-                <input type="password" name="password" id="confirmPassword" value="" autocomplete="off">
+                <input  type="password" name="password" id="confirmPassword" value="" autocomplete="off">
                 </div>
                </form>
                 <div id="modifyInfos">
                     <button id="btnEdit" class="ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-edit">Edit</button>
-                    <button id='validateEdit' class="ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-check">check</button>
+                    <button id='validateEdit' class="ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-check">modify</button>
                 </div>
 
             <p> number of dogs : 1</p>
@@ -126,46 +127,11 @@
                 UserEmail.disabled = false;
                 
             }*/
-
-            var incomplete = $('p');
-            incomplete.hide();
-            var confirm = $('#confirmation');
-            confirm.hide();
-            var check = $('#validateEdit');
-            check.hide();
-            check.css({"background-color":"#81bc4a","color":"white"}) ;
-
-            var username = $('#userAccName');
-            var usermail = $('#userAccEmail');
-            var userpwd = $('#userAccPassword');
-
-            $('#btnEdit').click(editProfile);
+           
+           
+          
             
-            function editProfile(){
-                username.textinput('enable');
-                usermail.textinput('enable');
-                userpwd.textinput('enable');
-                check.show();
-                confirm.show();
-                
-               
-            }
-            check.click(check);
-
-            function check(){
-                /*if (username.val()=" "){
-                    username.css({"border-color":"red"});
-                }
-                if(usermail.val()=" "){
-                    usermail.css("border-color","red");
-                }
-                if (userpwd.val()=" "){
-                    usermail.css("border-color","red");
-                }*/
-                alert('hi');
-            }
-            
-            </script>
+        </script>
     </body>
    
 </html>
