@@ -7,7 +7,39 @@
         <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
 	
     <link rel="stylesheet" href="./css/style.css" />
-  
+          <script src="js/jquery-1.11.1.min.js"></script>
+	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/script.js"></script>
+        
+                 <script type="text/javascript">
+                jQuery( document ).ready(function($) {
+                    var slide = new Array();
+                    for (j=1; j < 11; j++) {
+                        slide[j] = new Image;
+                        slide[j].src = "pictures/Guide/guide"+j+".png";
+                        console.log(slide[j]);
+                    };
+                    
+                    var i = 0;
+                    
+                    $("#guide").click(function(event) {
+                        console.log(event.clientX);
+                        
+                        if (event.clientX <= $("#guide").width()/2 ) {
+                            i = i - 1 + 11; 
+                        } else {
+                            i = (i + 1)%11 ; 
+                        };
+                        i = i % 11;
+                        $("#guide").attr("src",slide[i].src);
+                        console.log(i);
+                        console.log(slide[i]);
+                        
+                        
+                    });
+        });
+
+</script>
         
     </head>
     
@@ -37,15 +69,15 @@
             
          <!----------------------------- NAVBAR 2 ------------------------------>
 
-            <div data-role="header" data-position="fixed">
-                <div data-role="navbar" class="navbar navbar-2" data-position="fixed">
+            <div data-role="header" data-position="">
+                <div data-role="navbar" class="navbar navbar-2" data-position="">
                     <ul>
                         <li><a id="dog-pp" href="dog_profile.html" ><img alt="dog picture" src="pictures/dog-test.jpg"/></a></li>
                          <li><a href="" class="page-title-link" ><p class="page-title">Help Guide</p></a></li>
                         <li><a id="hamburger" href="#topright-menu"><img alt="nenu" src="pictures/color_menu.png"/></a></li>
                     </ul>
                 </div>
-                <div data-role="navbar" data-iconpos="bottom" data-position="fixed">
+                <div data-role="navbar" data-iconpos="bottom" data-position="">
                     <ul style="text-align: center;">
                         <li><a href="./health.html"><img src="pictures/health_icon.png" alt="health" style="height:50px; margin: 5px;"/></a></li>
                         <li><a href="./activity.html"><img src="pictures/activities_icon.png" alt="health" style="height:50px; margin: 5px;"/></a></li>
@@ -57,22 +89,18 @@
             
             <!----------------------------- END NAVBAR 2 ------------------------------>
 
-            
-            
+   
+
+    
             <div role="main" class="ui-content">
-                <h1>Help Guide</h1>
-                
-                <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.
-                    
-                Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
-                    
-                Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri. </p>
-                
+                <div id="slideshow" >
+                    <img src="pictures/Guide/guide1.png" id="guide" alt="" style="max-width: -webkit-fill-available"/>
+                </div>
             </div><!-- /content -->
             
             
             
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-position="">
                 <div data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li><a href="main_page.html" data-icon="arrow-l" data-rel="back"></a></li>
@@ -87,9 +115,8 @@
             
         </div>
         
-        <script src="js/jquery-1.11.1.min.js"></script>
-	<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/script.js"></script>
+
+
         
     </body>
 </html>
