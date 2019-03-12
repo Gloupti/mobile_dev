@@ -44,9 +44,23 @@ function btnCheck(){
 
 var inputs = [username, usermail, userpwd, confirmPwd ];
 
-if ($('.inputAcc').val() != "")
+if ($('.inputAcc').val() == "")
 {
     
+    
+   
+    for (var i = 0;i<=3;i++)
+    {
+        if (inputs[i].val() == "")
+        {
+            inputs[i].css("border","1px solid red");
+            $('#notComplete p').text('your input is not complete');
+            
+        }
+    }
+}
+else
+{
     if (userpwd.val() == confirmPwd.val())
     {
         alert('completed form'); //success // Davide you can call your fire base function here instead of the alert
@@ -55,17 +69,6 @@ if ($('.inputAcc').val() != "")
     {
         confirmPwd.css("border","1px solid red");
         $('#notComplete p').text('the confirmed password is different');
-    }
-}
-else
-{
-    for (var i = 0;i<=3;i++)
-    {
-        if (inputs[i].val() == "")
-        {
-            inputs[i].css("border","1px solid red");
-            $('#notComplete p').text('you input is not complete');
-        }
     }
 }
 
